@@ -1,4 +1,4 @@
-#![allow(unused)]
+#![allow(unexpected_cfgs, unused)]
 
 pub mod context;
 pub mod states;
@@ -17,32 +17,6 @@ pub const LOCK_CP_AUTH_SEED: &str = "lock_cp_authority_seed";
 #[program]
 pub mod raydium_liquidity_locking {
     use super::*;
-
-    /// Lock an existing clmm's position
-    ///
-    /// # Arguments
-    ///
-    /// * `ctx` -  The context of accounts
-    /// * `with_metadata` -  Create NFT with metadata or not
-    ///
-    pub fn lock_clmm_position<'a, 'b, 'c: 'info, 'info>(
-        ctx: Context<'a, 'b, 'c, 'info, LockClmmPosition<'info>>,
-        with_metadata: bool,
-    ) -> Result<()> {
-        Ok(())
-    }
-
-    /// collect clmm locked postion fees and rewards
-    /// # Arguments
-    ///
-    /// * `ctx` -  The context of accounts
-    ///
-    pub fn collect_clmm_fees_and_rewards<'a, 'b, 'c: 'info, 'info>(
-        ctx: Context<'a, 'b, 'c, 'info, CollectClmmFeeAndReward<'info>>,
-    ) -> Result<()> {
-        Ok(())
-    }
-
     /// Lock cpSwap liquidity and mint a nft to collect locked liquidity's fee.
     ///
     /// # Arguments

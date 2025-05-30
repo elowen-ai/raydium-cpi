@@ -18,7 +18,9 @@ devnet = []
 idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
 
 [dependencies]
-anchor-lang = { version = "=0.31.0", features = ["init-if-needed"] }
-anchor-spl = { version = "=0.31.0", features = ["memo"] }
-raydium-clmm-cpi = { path = "../clmm-cpi" }
-raydium-cpmm-cpi = { path = "../cpmm-cpi" }
+anchor-lang = { version = "=0.31.1", features = ["init-if-needed"] }
+anchor-spl = { version = "=0.31.1", features = ["memo"] }
+raydium-cp-swap = { git = "https://github.com/raydium-io/raydium-cp-swap", features = [
+    "no-entrypoint",
+    "cpi",
+] }
