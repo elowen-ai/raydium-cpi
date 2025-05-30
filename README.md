@@ -12,7 +12,7 @@ Call Locking through CPI.
 [dependencies]
 anchor-lang = "=0.31.1"
 anchor-spl = "=0.31.1"
-raydium-locking-cpi = { git = "https://github.com/lowen-ai/raydium-locking-cpi" }
+raydium-locking-cpi = { git = "https://github.com/elowen-ai/raydium-locking-cpi" }
 ```
 
 You can find usage examples in this [repository](https://github.com/raydium-io/raydium-cpi-example/tree/anchor-0.31.0).
