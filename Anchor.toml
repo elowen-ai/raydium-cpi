@@ -6,7 +6,7 @@ seeds = false
 skip-lint = false
 
 [registry]
-url = "https://github.com/lowen-ai/raydium-locking-cpi"
+url = "https://github.com/elowen-ai/raydium-locking-cpi"
 
 [provider]
 cluster = "Localnet"
